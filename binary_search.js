@@ -1,4 +1,5 @@
 const bs = (list, target) => {
+  if (list.length === 1) return list[0] === target;
   let [left, right] = [0, list.length - 1];
 
   while (left <= right) {
